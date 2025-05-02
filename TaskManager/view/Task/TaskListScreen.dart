@@ -3,7 +3,7 @@ import 'package:app_04/TaskManager/view/Task/AddTaskScreen.dart';
 import 'package:app_04/TaskManager/view/Task/EditTaskScreen.dart';
 import 'package:app_04/TaskManager/model/Task.dart';
 import 'package:app_04/TaskManager/view/Task/TaskDetailScreen.dart';
-import 'package:app_04/TaskManager/view/Authentication/LoginScreen.dart';
+import 'package:app_04/TaskManager/view/Sign-in/LoginScreen.dart';
 import 'package:app_04/TaskManager/db/TaskDatabaseHelper.dart';
 import 'package:app_04/TaskManager/db/UserDatabaseHelper.dart';
 import 'package:shared_preferences/shared_preferences.dart';
@@ -267,7 +267,7 @@ class _TaskListScreenState extends State<TaskListScreen> {
           );
           if (result == true) await _loadTasks();
         },
-        child: const Icon(Icons.add, color: Colors.white),
+        child: const Icon(Icons.add, color: Colors.black),
         backgroundColor: Colors.greenAccent,
       ),
     );
